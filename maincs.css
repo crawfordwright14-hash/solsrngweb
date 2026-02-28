@@ -1,0 +1,364 @@
+* {
+    font-family: "Sarpanch";
+     user-select: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+
+p {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+
+h1 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+      user-select: none;
+}
+
+h2 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    font-size:100px;
+    user-select: none;
+}
+
+h3 {
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    user-select: none;
+}
+
+h4 {
+    margin-top: 500px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    user-select: none;
+}
+
+li {
+    user-select: none;
+}
+
+#star100k {
+    position: absolute;
+    top: 37%;
+    left: 42%;
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
+    transition: all 1s;
+    opacity: 0%; 
+    color:aqua;
+}
+
+#radst1 {
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    width: 150px;
+    height: 150px;
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
+    transition: all 3s;
+    opacity: 0%; 
+    color:aqua;
+}
+#radst2 {
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    width: 150px;
+    height: 150px;
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
+    transition: all 3s;
+    opacity: 0%; 
+    color:aqua;
+}
+
+#radst3 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 150px;
+    height: 150px;
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
+    transition: all 3s;
+    opacity: 0%; 
+    color:aqua;
+}
+#radst4 {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    width: 150px;
+    height: 150px;
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
+    transition: all 3s;
+    opacity: 0%; 
+    color:aqua;
+}
+
+#star1m {
+    position: absolute;
+    top: 37%;
+    left: 42%;
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
+    transition: all 1s;
+    opacity: 0%; 
+    color:aqua;
+}
+
+#radp1 {
+    position: absolute;
+    top: 30%;
+    left:   39%;
+    width:  400px;
+    height: 450px;
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
+    transition: all .2s;
+    opacity: 0%; 
+    color:aqua;
+}
+#arp1 {
+    position: absolute;
+    top: 30%;
+    left:   39%;
+    width:  400px;
+    height: 500px;
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
+    transition: all .2s;
+    opacity: 0%; 
+    color:aqua;
+}
+#mop1 {
+    position: absolute;
+    top: 30%;
+    left:   39%;
+    width:  400px;
+    height: 500px;
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
+    transition: all .2s;
+    opacity: 0%; 
+    color:aqua;
+}
+#sm1 {
+    position: absolute;
+    width:  99%;
+    height: 98%;
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
+    transition: all .2s;
+    opacity: 0%; 
+    color:aqua;
+}
+#moe1 {
+    position: absolute;
+    top: 12%;
+    left:   38%;
+    width:  400px;
+    height: 500px;
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
+    transition: all .2s;
+    opacity: 0%; 
+    color:aqua;
+}
+
+
+#moe2 {
+    position: absolute;
+    top: 30%;
+    left:   1%;
+    width:  300px;
+    height: 100px;
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
+    transition: all .2s;
+    opacity: 0%; 
+    color:aqua;
+}
+
+#moe3 {
+    position: absolute;
+    top: 12%;
+    left:   70%;
+    width:  300px;
+    height: 300px;
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
+    transition: all .2s;
+    opacity: 0%; 
+    color:aqua;
+}
+
+#moe4 {
+    position: absolute;
+    top: 70%;
+    left:   40%;
+    width:  500px;
+    height: 50px;
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
+    transition: all .2s;
+    opacity: 0%; 
+    color:aqua;
+}
+
+#moe5 {
+    position: absolute;
+    top: 15%;
+    left:   70%;
+    width:  500px;
+    height: 700px;
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
+    transition: all .2s;
+    opacity: 0%; 
+    color:aqua;
+}
+
+#lg {
+    position: absolute;
+    top: 80%;
+    left:   70%;
+    width:  450px;
+    height: 150px;
+    filter: drop-shadow(0px 0px 30px rgb(62, 255, 3));
+    transition: all .2s;
+    opacity: 100%; 
+    color:aqua;
+    background-color: rgba(0,0,0,0);
+    visibility: hidden;
+}
+
+#cd {
+    position: absolute;
+    top: 60%;
+    left:   70%;
+    width:  450px;
+    height: 150px;
+    filter: drop-shadow(0px 0px 30px rgb(207, 48, 255));
+    transition: all .2s;
+    visibility: hidden;
+    color:aqua;
+}
+
+#tg {
+    position: absolute;
+    top: 40%;
+    left:   70%;
+    width:  450px;
+    height: 150px;
+    filter: drop-shadow(0px 0px 30px rgb(129, 58, 0));
+    transition: all .2s;
+    visibility: hidden;
+    color:aqua;
+}
+
+#ppu {
+    position: absolute;
+    top: 30%;
+    left:   37%;
+    width:  500px;
+    height: 500px;
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
+    transition: all .2s;
+    opacity: 0%; 
+    color:aqua;
+}
+
+#aura-list {
+    position: absolute;
+    top: 105vh;
+    font-size: 32px;
+}
+
+#crafting_menu {
+    position: absolute;
+    left: 100vw;
+    /* height: 100vh; */
+    width: 30vw;
+    background-color:rgba(0, 0, 0, 0.5) ;
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 10px; */
+}
+
+.item {
+    color: white; 
+      margin-top: 1%;
+    
+}
+
+.item-name {
+    justify-content: left;
+    padding-left: 15px;
+      margin-top: 0%;
+}
+
+.item-button {
+    font-size: 50px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0,0,0,0.7);
+}
+
+.item-recipe {
+
+}
+
+#hp {
+    background-color:rgba(0, 0, 0, 0.5);
+    position: absolute;
+   left: 131%;
+   z-index: 500;
+}
+
+#hpimg {
+   z-index: 500;
+}
+
+#hp:hover {
+    cursor:pointer;
+}
+
+#rollb {
+    text-align: center;
+}
+
+#clicky {
+    outline: red;
+    height: 100px;
+}
+
+#Circol {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    left: 200px;
+    top: 200px;
+    border: 10px solid black;
+    border-radius: 50%;
+    animation: pulse 1s ;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        scale: 0%;
+        border-color: black;
+    }
+    100% {
+        scale: 200%;
+        border-color: transparent;
+    }
+
+}
