@@ -1,5 +1,5 @@
 let should = false
-let multi = 1
+let multi = 10000000
 const luckb = document.getElementById("lg")
 const crys = document.getElementById("cd")
 const topa = document.getElementById("tg")
