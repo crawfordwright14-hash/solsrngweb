@@ -1,5 +1,5 @@
 let should = false
-let multi = 8000000
+let multi = 1
 const luckb = document.getElementById("lg")
 const crys = document.getElementById("cd")
 const topa = document.getElementById("tg")
@@ -107,6 +107,7 @@ const craftableitems = {
 }
 
 const craftingmenu = document.getElementById("crafting_menu")
+craftingmenu.style.visibility = "hidden"
 
 for(const item in craftableitems) {
     const div = document.createElement("div")
@@ -1299,7 +1300,7 @@ function roll() {
         can = false
         setTimeout(() => {
             if (incut == false) {
-                document.getElementById("rolb").setAttribute("style","opacity:1; -moz-opacity:0; filter:alpha(opacity=0)")
+                document.getElementById("rolb").setAttribute("style","opacity:0; -moz-opacity:0; filter:alpha(opacity=0)")
                 can = true
                 multi -= boost
                 rolls += 1
@@ -1333,9 +1334,6 @@ function tp() {
     sirkul.style.top="" + Mrathers + "%"
     console.log(Mrathers)
 }
-
-
-sirkul.addEventListener("animationiteration", tp)
 
 hp.onclick = (e) => {
     boost = 250000
