@@ -9,14 +9,14 @@ let incut = false
 const aul = document.getElementById("aura-list")
 let rolls = 0
 let boost = 0
-const hp = document.getElementById("hpimg")
+const hp = document.getElementById("hpot")
 const rollste = document.getElementById("RTex")
 const rollb = document.getElementById("clickity")
-
+let hpused = false
 
 hp.onclick = (e) => {
-    boost = 250000
-    console.log("clickiety")
+    hpused = true
+    boost += 250000
 }
 
 document.oncontextmenu = (e) => {
@@ -1292,33 +1292,45 @@ function roll() {
             }
 
         }
-        
         console.log(maths)
         console.log(multi)
         console.log(auras)
         console.log(text)
         can = false
-        setTimeout(() => {
-            if (incut == false) {
-                document.getElementById("rolb").setAttribute("style","opacity:0; -moz-opacity:0; filter:alpha(opacity=0)")
-                can = true
-                multi -= boost
-                rolls += 1
-                boost = 0
-                rollste.textContent = "Rolls: " + rolls
+        if (incut == true) {
+                setTimeout(() => {
+                    document.getElementById("rolb").setAttribute("style","opacity:1; -moz-opacity:1; filter:alpha(opacity=100)")
+                    can = true
+                    multi -= boost
+                    rolls += 1
+                    rollste.textContent = "Rolls: " + rolls
+                     setTimeout(() => {
+                         boost = 0
+                    }, 1);
+                }, 10000);
             }
-        }, 1000);
+            else if (incut == false) {
+                setTimeout(() => {
+                    document.getElementById("rolb").setAttribute("style","opacity:1; -moz-opacity:1; filter:alpha(opacity=100)")
+                    can = true
+                    multi -= boost
+                    rolls += 1
+                    rollste.textContent = "Rolls: " + rolls
+                    setTimeout(() => {
+                         boost = 0
+                    }, 1);
+                }, 1000);
+            }
     }
-    
     else {
         console.log("Cooldown!")
     }
     aul.innerHTML = null
     for (const aura in auras) {
         if (auras[aura] != 0) {
-             const li= document.createElement("li")
-        li.textContent = aura + ":" + auras[aura]
-        aul.appendChild(li)
+            const li= document.createElement("li")
+            li.textContent = aura + ":" + auras[aura]
+            aul.appendChild(li)
         }
     }
 }
@@ -1328,6 +1340,8 @@ rolb.onclick = (e) => {
 
 const sirkul = document.getElementById("Circol")
 
+sirkul.style.visibility = "hidden"
+
 function tp() {
     let Mrathers = Math.random() * 100
     sirkul.style.left="" + Mrathers + "%"
@@ -1335,7 +1349,3 @@ function tp() {
     console.log(Mrathers)
 }
 
-hp.onclick = (e) => {
-    boost = 250000
-    console.log("clickiety")
-}

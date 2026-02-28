@@ -338,6 +338,7 @@ li {
 }
 
 #Circol {
+    visibility: hidden;
     position: absolute;
     width: 100px;
     height: 100px;
@@ -346,18 +347,19 @@ li {
     top: 200px;
     border: 10px solid black;
     border-radius: 50%;
-    animation: pulse 1s ;
+    /* animation: pulse 1s ;
     animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 
 @keyframes pulse {
     0% {
         scale: 0%;
+         border-color: transparent;
         border-color: black;
     }
     100% {
-        scale: 200%;
+        scale: 0%;
         border-color: transparent;
     }
 
